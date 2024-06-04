@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.main-sections{
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.advantagens{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title{
+    font-size: 6rem;
+}
+
+.yellow-title{
+    color: #FAB01D;
+}
+
+.phone{
+    display: block;
+    min-height: 90vh;
+    width: 50%;
+}
+
+.phone-header{
+    background: #F9B838;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.phone-header div{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background: #d9d9d9;
+    margin-left: 1.5rem;
+}
+
+.phone-header h2{
+    letter-spacing: 0.2rem;
+    color: #262535;
+    font-size: 5rem;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.phone-content{
+    background: #D9D9D9;
+    display: flex;
+    flex-flow: column wrap;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+}
+
+.talking-ballons{
+    display: block;
+    margin: 0.5rem;
+    width: 50%;
+    background: #F9B838;
+    font-size: 2.4rem;
+    color: #262535;
+    border-radius: 2rem;
+    padding: 1rem
+}
+
+.talking-ballons:nth-child(1),
+.talking-ballons:nth-child(6){
+    position: relative;
+    left: 50%;
+    background: #FAB01D;
+}
+
+@media (max-width: 80rem) {
+    .title{
+        margin-bottom: 2rem;
+    }
+    
+    .advantagens{
+        flex-flow: column nowrap;
+    }
+
+    .phone{
+        width: 70%;
+    }
+
+    .phone-header h2{
+        font-size: 3rem;
+    }
+
+    .phone-header div{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .talking-ballons{
+        width: 70%;
+    }
+
+    .talking-ballons:nth-child(1),
+    .talking-ballons:nth-child(6){
+    position: relative;
+    left: 30%;
+    background: #FAB01D;
+}
+}

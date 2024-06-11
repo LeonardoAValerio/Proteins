@@ -22,9 +22,6 @@ body{
     background-color: #f2f2f2;
     min-height: 100vh;
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .semi-sections{
@@ -78,18 +75,18 @@ body{
 }
 
 .img_logo_header{
-    width: 17.5rem;
+    width: 50%;
 }
 
 .header{
     position: fixed;
     display: flex;
     flex-direction: row;
-    align-items: space-around;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     background: var(--color-dark2);
-    justify-content: space-between;
     padding: 2rem;
     z-index: 2;
 }
@@ -97,7 +94,7 @@ body{
 .navigation_header{
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .navigation_header li{
@@ -123,7 +120,7 @@ body{
     background-color: var(--color-dark1);
     font-family: 'inter', sans-serif;
     color: var(--color-white);
-    background-image: url('grama.jpg');
+    background-image: url('/Assets/img/grama.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -144,6 +141,17 @@ body{
 
 /*SOBRE NOS*/
 
+.about-we{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-we .title{
+    width: 100%;
+}
+
 .container-we {
     display: flex;
     justify-content: center;
@@ -152,18 +160,18 @@ body{
 }
 
 .content-we {
-    flex: 1;
     min-width: 50%;
     padding: 10px;
 }
 
 .content-we{
+    width: 40%;
     font-size: 4.2rem;
 }
 
 .container-we img{
-    height: 60%;
-    width: 60%;
+    height: 35%;
+    width: 35%;
     object-fit: contain;
 }
 
@@ -284,19 +292,18 @@ body{
 .production-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 2rem;
 }
 
-.production-content img {
-    width: 50%;
-    height: 50%;
+.production-content img{
+    width: 30%;
+    height: 30%;
     border-radius: 0.8rem;
 }
 
-.production-content p {
-    max-width: 50%;
-    margin-left: 5rem;
+.production-content p{
+    width: 50%;
     font-size: 4.2rem;
     line-height: 1.5;
 }
@@ -368,7 +375,7 @@ body{
 /*FOOTER*/
 
 .footer {
-    background-color: var(--color-dark2);
+    background-color: #d9d9d9;
     min-height: 50vh;
     padding: 2rem;
     display: flex;

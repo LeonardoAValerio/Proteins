@@ -21,8 +21,10 @@ body{
 .main-sections{
     background-color: #f2f2f2;
     min-height: 100vh;
-    margin-top: 2rem;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .semi-sections{
@@ -33,12 +35,12 @@ body{
 
 .main-content{
     height: 100%;
-    max-width: 140rem;
+    max-width: 180rem;
     margin: auto;
 }
 
 .title{
-    font-size: 6rem;
+    font-size: 8rem;
     text-align: center;
 }
 
@@ -55,29 +57,28 @@ body{
     --color-yellowithe: #F9B838;
 }
 
-/*LUAN*/
+/*HEADER*/
+
 .fontey{
     font-family: 'inter', sans-serif;
-    font-size: 6rem;
+    font-size: 8rem;
     color: var(--color-yellow);
 }
 
 .fonte{
     font-family: 'inter', sans-serif;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     color: var(--color-white);
 }
 
 .fontep{
     font-family: 'inter', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--color-white);
 }
 
-/*HEADER*/
-
 .img_logo_header{
-    width: 175px;
+    width: 17.5rem;
 }
 
 .header{
@@ -141,45 +142,62 @@ body{
     text-align-last: left;
 }
 
+/*SOBRE NOS*/
+
+.container-we {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-we {
+    flex: 1;
+    min-width: 50%;
+    padding: 10px;
+}
+
+.content-we{
+    font-size: 4.2rem;
+}
+
+.container-we img{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+}
+
+.list_menu li{
+    font-size: 4.4rem;
+    margin-left: 4rem;
+    color: var(--color-yellow);
+}
+
 /*TENEBRIUM*/
 
-.container {
+.tenebrium-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     padding: 20px;
-    background-color: var(--color-white);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-tenebrium {
-    text-align: center;  
     margin-bottom: 20px;
 }
 
 .description1, .description2 {
-    font-size: 3.6rem;
+    font-size: 4.2rem;
     line-height: 1.5;
-    color: black;
-    text-align: center; 
+    margin-left: 4rem;
+    text-align: left; 
 }
 
-.description1 {
-    margin-bottom: 20px;
-}
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.image-container {
-    margin-bottom: 10px; 
-}
-
-.image-container img {
-    width: 80%; 
+.tenebrium-img {
+    width: 40%; 
     object-fit: cover;
     border: 10px solid var(--color-yellowithe);
     border-radius: 50%;
@@ -190,17 +208,23 @@ body{
 }
 
 /*VANTAGENS*/
+
 .advantagens{
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.advantagens .title{
+    font-size: 10rem;
+    margin-right: 8rem;
 }
 
 .phone{
     display: block;
-    min-height: 90vh;
-    width: 50%;
+    height: 100%;
+    width: 70%;
 }
 
 .phone-header{
@@ -222,7 +246,7 @@ body{
 .phone-header h2{
     letter-spacing: 0.2rem;
     color: var(--color-darkblue);
-    font-size: 5rem;
+    font-size: 8rem;
     padding: 0.5rem;
     margin-left: 1.5rem;
 }
@@ -233,24 +257,25 @@ body{
     flex-flow: column wrap;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    height: 100%;
     padding: 1rem;
 }
 
 .talking-ballons{
     display: block;
     margin: 0.5rem;
-    width: 50%;
+    width: 40%;
     background: var(--color-yellowithe);
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     color: #262535;
     border-radius: 2rem;
-    padding: 1rem
+    padding: 2rem
 }
 
 .talking-ballons:nth-child(1),
 .talking-ballons:nth-child(6){
     position: relative;
-    left: 50%;
+    left: 59%;
     background: var(--color-yellow);
 }
 
@@ -272,7 +297,7 @@ body{
 .production-content p {
     max-width: 50%;
     margin-left: 5rem;
-    font-size: 3.6rem;
+    font-size: 4.2rem;
     line-height: 1.5;
 }
 
@@ -294,8 +319,8 @@ body{
 
 .partner-logos img {
     border-radius: 10%;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     margin: 1rem;
 }
 
@@ -305,7 +330,7 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 30%;
-    height: 30rem;
+    height: 40rem;
     background-color: var(--color-yellowithe);
     border-radius: 8px;
 }
@@ -318,21 +343,22 @@ body{
 
 .contact-text h3 {
     display: block;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 .contact-text p {
     display: block;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .phone-number {
     color: var(--color-white);
     background: #262535;
     width: 90%;
-    height: 4rem;
+    height: auto;
+    padding: 1rem;
     border-radius: 2rem;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -356,11 +382,11 @@ body{
 
 .footer-section h3{
     margin-bottom: 1rem;
-    font-size: 2.8rem;
+    font-size: 3.6rem;
 }
 
 .footer-section p{
-    font-size: 2.4rem;
+    font-size: 3.2rem;
 }
 
 .map {
@@ -406,5 +432,27 @@ body{
     position: relative;
     left: 30%;
     background: #FAB01D;
-}
+    }
+
+    /*NOSSA PRODUÇÃO*/
+
+    .production-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .production-content img {
+        width:100%;
+        height: 100%;
+        border-radius: 0.8rem;
+    }
+
+    .production-content div{
+        max-height: 50%;
+    }
+    .production-content p {
+        font-size: 2.4rem;
+    }
 }

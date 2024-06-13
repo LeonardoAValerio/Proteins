@@ -9,45 +9,51 @@
 <body>
     <!--HEADER-->
     <nav class="header">
-        <a href="#Intro"><img src="Assets/img/logoProteins.png" alt="Logo Proteins" class="img_logo_header"></a>
+        <a href="#Intro" class="logo-header"><img src="Assets/img/logoProteins.png" alt="Logo Proteins" class="img-logo-header"></a>
         <ul class="navigation_header fonte">
-            <li><a href="#">Sobre</a></li>
+            <li><a href="#Sobre">Sobre nós</a></li>
             <li><a href="#Tenebrium">Tenebrium</a></li>
+            <li><a href="#Vantagens">Vantagens</a></li>
             <li><a href="#Contato">Contato</a></li>
-            <li><a href="#">Menu PDFs</a></li>
         </ul>
     </nav>
     
     <!--INTRO-->
-    <div class="alinha intro" id="Intro">
-        <h1 class="fontey">POR UM</h1>
-        <h1 class="fonte">FUTURO<br>MELHOR</h1>
-        <br>
-        <div class="linha"></div>
-        <br>
-        <h1 class="fontep">Reinventando a<br>Cadeia Alimentar</h1>
-    </div>
+    
+    <div class="darkness"></div>
+    <section class="intro" id="Intro">
+            <div class="intro-text">
+                <h1 class="fontey">Proteina</h1>
+                <h1 class="fonte">De Inseto</h1>
+                <br>
+                <div class="linha"></div>
+                <br>
+                <h2 class="fontep">Reinventando a<br>Cadeia Alimentar</h2>
+            </div>
+    </section>
 
     <!--SOBRE NOS-->
-    <section class="main-sections">
-        <h1 class="title"><span>Sobre</span> Nós </h1>
-        <div class="container-we">
-            <div class="content-we">
-                <p>Na Proteins, encaramos cada dia como uma nova oportunidade para inovar e proteger nosso ambiente.</p> 
-                <p>Nossa empresa é impulsionada por uma mentalidade ousada de exploração, onde o respeito pela natureza é central. Acreditamos que:</p>
-                <ul class="list_menu">
-                    <li>autenticidade</li>
-                    <li>solidariedade</li>
-                    <li>adaptabilidade</li>
-                </ul>
-                <p>São pilares essenciais para garantir nosso sucesso e o bem-estar do mundo ao nosso redor.</p>
+    <section class="main-sections" id="Sobre">
+        <div class="main-content">
+            <h2 class="title"><span>Sobre</span> Nós </h2>
+            <div class="container-we">
+                <div class="content-we">
+                    <p>Na Proteins, encaramos cada dia como uma nova oportunidade para inovar e proteger nosso ambiente.</p> 
+                    <p>Nossa empresa é impulsionada por uma mentalidade ousada de exploração, onde o respeito pela natureza é central. Acreditamos que:</p>
+                    <ul class="list_menu">
+                        <li>autenticidade</li>
+                        <li>solidariedade</li>
+                        <li>adaptabilidade</li>
+                    </ul>
+                    <p>São pilares essenciais para garantir nosso sucesso e o bem-estar do mundo ao nosso redor.</p>
+                </div>
+                <img src="https://www.eso.org/public/archives/images/thumb300y/eso2008a.jpg" alt="imagem legal teste">
             </div>
-            <img src="https://www.eso.org/public/archives/images/thumb300y/eso2008a.jpg">
         </div>
     </section>
 
     <!--TENEBRIUM-->
-    <section class="main-sections" id="Tenebrium">
+    <section class="main-sections green" id="Tenebrium">
         <div class="main-content">
             <h2 class="title">Tenebrios <span>Molitor</span></h2>
             <div class="tenebrium-box">
@@ -65,72 +71,57 @@
     </section>
 
     <!--VANTAGENS-->
-    <section class="main-sections">
-        <div class="advantagens main-content">
+    <section class="main-sections" id="Vantagens">
+        <div class="main-content">
             <h2 class="title"><span class="yellow-title">Vanta</span>gens</h2>
-            <section class="phone">
-                <div class="phone-header">
-                    <div class="photo-circle"></div>
-                    <h2>Proteins</h2>
+            <section class="advantagens">
+                <div class="advantage-square">
+                    <h3>Bom desempenho com animais</h3>
                 </div>
-                <div class="phone-content">
-                    <div class="talking-ballons">
-                        <p><strong>Quais as vantagens</strong> do tenebrium na Proteins?</p>
-                    </div>
-
-                    <div class="talking-ballons">
-                        <p>Proteína de inseto que apresenta <strong>bom desempenho com animais.</strong></p>
-                    </div>
-
-                    <div class="talking-ballons">
-                        <p>Ingrediente premuim <strong>altamente digerível.</strong></p>
-                    </div>
-
-                    <div class="talking-ballons">
-                        <p>Contém <strong>nutrientes essenciais</strong> como <strong>ômega-6 e vitaminas.</strong></p>
-                    </div>
-
-                    <div class="talking-ballons">
-                        <p><strong>Redução no colesterol</strong>, com alimentação de sua farinha.</p>
-                    </div>
-
-                    <div class="talking-ballons">
-                        <p>Que legal, acredito, que poderiamos <strong>criar uma parceria!</strong>  </p>
-                    </div>
+                <div class="advantage-square">
+                    <h3>Altamente digerível</h3>
+                </div>
+                <div class="advantage-square">
+                    <h3>Nutrientes: Ômega-6 e vitaminas</h3>
+                </div>
+                <div class="advantage-square">
+                    <h3>Redução no colesterol</h3>
                 </div>
             </section>
         </div>
     </section>
 
     <!--NOSSA PRODUÇÃO-->
-    <section class="main-sections" id="">
-        <h2 class="title">Nossa <span class="yellow-title">Produção</span></h2>
-        <div class="production-content">
-            <img src="Assets/img/producao-inseto.jpg" alt="Produção de insetos">
-            <p>Desenvolvemos inovações para a criação de insetos em larga escala e automatizamos processos para transformar insetos em matérias-primas de altíssima qualidade. Trabalhamos com o conceito de Boas Práticas de Fabricação (BPF)</p>
+    <section class="main-sections green">
+        <div class="main-content">
+            <h2 class="title">Nossa <span class="yellow-title">Produção</span></h2>
+            <div class="production-content">
+                <img src="Assets/img/producao-inseto.jpg" alt="Produção de insetos">
+                <p>Desenvolvemos inovações para a criação de insetos em larga escala e automatizamos processos para transformar insetos em matérias-primas de altíssima qualidade. Trabalhamos com o conceito de Boas Práticas de Fabricação (BPF)</p>
+            </div>
         </div>
     </section>
 
     <!--PARCEIROS-->
     <section class="semi-sections" id="Contato">
-    <div class="partners">
-        <section>
-                <h2 class="title">Parce<span>iros</span></h2>
-                <div class="partner-logos">
-                    <img src="Assets/img/biopark.png" alt="Logo Biopark">
-                    <img src="Assets/img/ashland.png" alt="Logo Ashland">
+        <div class="semi-content">
+            <section class="partners">
+                <div>
+                    <h2 class="title">Parce<span>iros</span></h2>
+                    <div class="partner-logos">
+                        <img src="Assets/img/biopark.png" alt="Logo Biopark">
+                        <img src="Assets/img/ashland.png" alt="Logo Ashland">
+                    </div>
                 </div>
-        </section>
-        <section class="contact">
-            <div class="contact-text">
-                <h3>Se interessou pela Proteins?</h3>
-                <p>Entre em contato conosco:</p>
-            </div>
-            <div class="phone-number">
-                <p>(45) 99999-9999</p>
-            </div>
-        </section>
-    </div>
+                <div class="contact">
+                    <div class="contact-text">
+                        <h3>Se interessou pela Proteins?</h3>
+                        <p>Entre em contato conosco:</p>
+                    </div>
+                    <a href="#" class="phone-number"><p>(45) 99999-9999</p></a>
+                </div>
+            </section>
+        </div>
     </section>
 
     <!--FOOTER-->
@@ -144,8 +135,8 @@
             </div>
         <div class="footer-section">
             <h3>Contatos</h3>
-            <p></span>Email:</span> inventado@xgustal.com</p>
-            <p></span>Telefone:</span> +55 99999-9999</p>
+            <p><span>Email:</span> inventado@xgustal</p>
+            <p><span>Telefone:</span> +55 99999-9999</p>
         </div>
         <div class="footer-section">
             <h3>Redes sociais</h3>

@@ -79,13 +79,13 @@ body{
 
 .fonte{
     font-family: 'inter', sans-serif;
-    font-size: 3.2rem;
+    font-size: 4rem;
     color: var(--color-white);
 }
 
 .fontep{
     font-family: 'inter', sans-serif;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     color: var(--color-white);
 }
 
@@ -104,6 +104,10 @@ body{
     background: var(--color-dark2);
     padding: 2rem;
     z-index: 2;
+}
+
+.header .fonte{
+    font-size: 3.2rem;
 }
 
 .logo-header{
@@ -399,6 +403,8 @@ body{
     
     .logo-header{
         width: 50%;
+        max-height: 6rem;
+        max-width: 30rem;
     }
     
     .fonte{

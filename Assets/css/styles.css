@@ -286,6 +286,10 @@ body{
     transition: all ease-in-out 300ms;
 }
 
+.icon{
+    width: 30%;
+}
+
 .advantage-square:hover{
     transform: scale(1.05);
 }
@@ -305,46 +309,40 @@ body{
 
 .double-section{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .production{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 50%;
+    width: 100%;
+    height: 50%;
     background-color: var(--color-green);
-    padding-bottom: 4rem;
     color: var(--color-whitesmoke);
+    padding: 2rem;
 }
 
 .products{
-    padding-top: 4rem;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 50%;
-}
-
-.production-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
 }
 
 .text-prod{
     display: block;
     text-align: justify;
-    width: 60%;
+    width: 40%;
     font-size: 3.2rem;
-    margin: 2rem 0;
 }
 
 .img-prod{
-    width: 60%;
+    width: 20%;
     border-radius: 2rem;
 }
 
@@ -366,8 +364,8 @@ body{
 
 .partner-logos img {
     border-radius: 10%;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     margin: 1rem;
 }
 
@@ -554,9 +552,16 @@ body{
         color: #000;
     }
     
+    .icon{
+        width: 50%;
+        max-width: 10rem;
+    }    
+    
     .advantage-square{
         width: 45%;
         height: 20rem;
+        flex-flow: column;
+        justify-content: space-around;
     }
     
     .advantage-square h3{
@@ -569,15 +574,21 @@ body{
 
     .production{
         width: 100%;
+        flex-flow: column wrap;
     }
     
     .products{
         width: 100%;
+        flex-flow: column wrap;
     }
 
     .text-prod{
         width: 80%;
         font-size: 2.4rem;
+    }
+
+    .img-prod{
+        width: 40%;
     }
     
 

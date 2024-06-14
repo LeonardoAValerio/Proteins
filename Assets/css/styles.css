@@ -279,7 +279,7 @@ body{
     height: 20rem;
     padding: 1rem;
     margin: 0.5rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +296,7 @@ body{
 
 .advantage-square h3{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.2rem;
     color: var(--color-darkblue);
 }
 
@@ -321,7 +321,7 @@ body{
     height: 50%;
     background-color: var(--color-green);
     color: var(--color-whitesmoke);
-    padding: 2rem;
+    padding-bottom: 4rem;
 }
 
 .products{

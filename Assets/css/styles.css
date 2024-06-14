@@ -7,6 +7,8 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    white-space: 0.5rem;
+    color: #262535;
 }
 
 :root{
@@ -18,6 +20,7 @@ html{
     --color-yellowithe: #F9B838;
     --color-lightgray1: #f2f2f2;
     --color-lightgray2: #d9d9d9;
+    --color-whitesmoke: #F0F0EA;
     --color-green: #46594E;
 }
 
@@ -32,14 +35,12 @@ body{
 
 .main-sections{
     background-color: var(--color-lightgray);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     /*min-height: 90vh;*/
 }
 
 .main-sections.green{
     background-color: var(--color-green);
-    color: var(--color-lightgray2);
+    color: var(--color-whitesmoke);
 }
 
 .semi-sections{
@@ -49,6 +50,8 @@ body{
 }
 
 .main-content{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     height: 100%;
     max-width: 180rem;
     margin: auto;
@@ -63,11 +66,10 @@ body{
     max-width: 180rem;
     margin: auto;
     padding-top: 4rem;
-    padding-bottom: 4rem;
 }
 
 .title{
-    font-size: 6.4rem;
+    font-size: 4.8rem;
     text-align: center;
     width: 100%;
 }
@@ -246,19 +248,29 @@ body{
 
 /*VANTAGENS*/
 .back-advantagens{
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 100%;
     background-color: var(--color-lightgray1);
+    background-image: url(../img/Seta.png);
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o elemento */
+    background-position: top; /* Posição da imagem */
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.back-advantagens .title{
+    color: var(--color-darkblue);
 }
 
 .advantagens{
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items: center;
     flex-flow: row wrap;
     padding: 1rem;
-    height: 100%;
 }
 
 .advantage-square{
@@ -279,7 +291,37 @@ body{
     color: var(--color-darkblue);
 }
 
-/*NOSSA PRODUÇÃO*/
+.gap-green{
+    height: 8rem;
+    background: var(--color-green);
+}
+
+/*PÁGINA DUPLA*/
+
+.double-section{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.production{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: var(--color-green);
+    padding-bottom: 4rem;
+    color: var(--color-whitesmoke);
+}
+
+.products{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
 
 .production-content {
     display: flex;
@@ -288,16 +330,17 @@ body{
     margin-top: 2rem;
 }
 
-.production-content img{
-    width: 40%;
-    height: 40%;
-    border-radius: 0.8rem;
+.text-prod{
+    display: block;
+    text-align: justify;
+    width: 60%;
+    font-size: 3.2rem;
+    margin: 2rem 0;
 }
 
-.production-content p{
-    width: 50%;
-    text-align: justify;
-    font-size: 3.2rem;
+.img-prod{
+    width: 60%;
+    border-radius: 2rem;
 }
 
 /*PARCEIROS*/
@@ -496,32 +539,43 @@ body{
     
     /*VANTANGES*/
     
-    .advantage-square{
+    .back-advantagens{
         width: 100%;
+        height: 100%;
+        background-position: 1rem;
+        background-size: 100% 120%; 
+    }
+    
+    .back-advantagens .title{
+        color: #000;
+    }
+    
+    .advantage-square{
+        width: 45%;
+        height: 20rem;
     }
     
     .advantage-square h3{
-        font-size: 4rem;
+        text-align: center;
+        font-size: 2.4rem;
+        color: var(--color-darkblue);
     }
 
-    /*NOSSA PRODUÇÃO*/
-    .production-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    /*Página dupla*/
 
-    .production-content img {
-        width:80%;
-        height:80%;
-        border-radius: 0.8rem;
+    .production{
+        width: 100%;
     }
     
-    .production-content p {
-        width: 90%;
+    .products{
+        width: 100%;
+    }
+
+    .text-prod{
+        width: 80%;
         font-size: 2.4rem;
     }
+    
 
     /*PARCEIROS*/
 

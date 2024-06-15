@@ -108,28 +108,30 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     background: var(--color-dark2);
     padding: 2rem;
     z-index: 2;
 }
 
 .header .fonte{
-    font-size: 3.2rem;
+    font-size: 2.4rem;
 }
 
 .logo-header{
-    width: 20%;
+    width: 15%;
 }
 
 .navigation_header{
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
+    padding-right: 8rem;
 }
 
 .navigation_header li{
     list-style: none;
+    margin-left: 10rem;
 }
 
 .navigation_header a{
@@ -312,6 +314,10 @@ body{
     flex-flow: column wrap;
 }
 
+.double-section .title{
+    margin-bottom: 4rem;
+}
+
 .production{
     display: flex;
     flex-flow: row wrap;
@@ -321,7 +327,7 @@ body{
     height: 50%;
     background-color: var(--color-green);
     color: var(--color-whitesmoke);
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 }
 
 .products{
@@ -334,6 +340,10 @@ body{
     padding: 2rem;
 }
 
+.products .title{
+    margin-top: 2rem;
+}
+
 .text-prod{
     display: block;
     text-align: justify;
@@ -344,6 +354,16 @@ body{
 .img-prod{
     width: 20%;
     border-radius: 2rem;
+}
+
+.img-prodcts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-prodcts img{
+    margin: 0 2rem;
 }
 
 /*PARCEIROS*/
@@ -364,8 +384,8 @@ body{
 
 .partner-logos img {
     border-radius: 10%;
-    width: 25rem;
-    height: 25rem;
+    width: 18rem;
+    height: 18rem;
     margin: 1rem;
 }
 
@@ -375,7 +395,7 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 40%;
-    height: 100%;
+    height: 90%;
     background-color: var(--color-yellowithe);
     border-radius: 0.8rem;
     padding: 2rem;

@@ -211,7 +211,6 @@ body{
     height: 20%;
     margin: 1rem;
 }
-
 /*TENEBRIUM*/
 
 .tenebrium-con{
@@ -253,14 +252,13 @@ body{
     border-radius: 2rem;
     width: 100%;
     background-color: var(--color-lightgray1);
-    background-image: url(../img/Seta.png);
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o elemento */
-    background-position: top; /* Posição da imagem */
+    background-size:cover; /* Ajusta o tamanho da imagem para cobrir o elemento */
     height: 40rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .back-advantagens .title{
